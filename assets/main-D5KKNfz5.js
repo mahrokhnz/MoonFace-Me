@@ -1,4 +1,4 @@
-var S=Object.defineProperty;var q=(e,t,c)=>t in e?S(e,t,{enumerable:!0,configurable:!0,writable:!0,value:c}):e[t]=c;var d=(e,t,c)=>(q(e,typeof t!="symbol"?t+"":t,c),c);import"./modulepreload-polyfill-B5Qt9EMX.js";const H=`
+var S=Object.defineProperty;var q=(e,t,c)=>t in e?S(e,t,{enumerable:!0,configurable:!0,writable:!0,value:c}):e[t]=c;var d=(e,t,c)=>q(e,typeof t!="symbol"?t+"":t,c);import"./modulepreload-polyfill-B5Qt9EMX.js";const H=`
     <ul class="menu">
         <li><a data-i18n-key="home" href="#home"></a></li>
         <li><a data-i18n-key="aboutMe" href="#aboutMe"></a></li>
