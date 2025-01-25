@@ -6,443 +6,242 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>My Resume</title>
-  <script type="module" crossorigin src="../../../assets/resume-D0GZlGQT.js"></script>
+  <script type="module" crossorigin src="../../../assets/resume-qFGo7JTe.js"></script>
   <link rel="modulepreload" crossorigin href="../../../assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="../../../assets/resume-B1xlwF2M.css">
 </head>
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        display: flex;
-    }
-
-    body .resumeContainer {
-        width: 210mm;
-        height: 297mm;
-        display: flex;
-        font-family: cormorantGaramondMedium, serif;
-        position: relative;
-    }
-
-    body .resumeContainer .menuItems {
-        flex: 0 1 0;
-        min-width: 25mm;
-        background-color: #282828;
-        color: #fff;
-        position: relative;
-    }
-
-    body .resumeContainer .content {
-        padding: 10.5mm 10mm;
-        position: relative;
-    }
-
-    body .resumeContainer .menuItems .personalInfo {
-        transform: rotateZ(-90deg) translateX(-90%) translateY(100%);
-        letter-spacing: 1.5mm;
-    }
-
-    body .resumeContainer .menuItems .menuItem {
-        position: absolute;
-        left: 13mm;
-    }
-
-    body .resumeContainer .menuItems .menuItem .menuItemImg {
-        width: 8mm;
-        height: 8mm;
-    }
-
-    body .resumeContainer .menuItems .workExperience {
-        top: 60mm;
-    }
-
-    body .resumeContainer .menuItems .education {
-        top: 169mm;
-    }
-
-    body .resumeContainer .menuItems .skill {
-        top: 230mm;
-    }
-
-    body .resumeContainer .content .info {
-        display: flex;
-    }
-
-    body .resumeContainer .content .info .nameWrapper {
-        display: flex;
-        flex-direction: column;
-        margin-right: 40mm;
-    }
-
-    body .resumeContainer .content .info .nameWrapper .firstname {
-        font-size: 9mm;
-    }
-
-    body .resumeContainer .content .info .nameWrapper .lastname {
-        font-size: 14mm;
-        margin-bottom: 2mm;
-    }
-
-    body .resumeContainer .content .info .nameWrapper .profession {
-        font-size: 4.8mm;
-        letter-spacing: 1.5mm;
-    }
-
-    body .resumeContainer .content .info .socialWrapper {
-        display: flex;
-        gap: 5mm;
-    }
-
-    body .resumeContainer .content .info .socialWrapper .social {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 5mm;
-        width: 8mm;
-        background-color: #282828;
-        margin-top: -10.5mm;
-        padding-bottom: 5mm;
-    }
-
-    body .resumeContainer .content .info .socialWrapper .social .socialImg {
-        width: 4mm;
-        height: 4mm;
-    }
-
-    body .resumeContainer .content .info .socialWrapper .address {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5mm;
-        padding-bottom: 5mm;
-        font-size: 3.5mm
-    }
-
-    body .resumeContainer .content .horizontalLine {
-        position: absolute;
-        left: -12mm;
-        width: 100%;
-        height: 0.5mm;
-        background-color: #bdc3c7;
-    }
-
-    body .resumeContainer .content .workHorizontalLine {
-        top: 70mm;
-    }
-
-    body .resumeContainer .content .educationHorizontalLine {
-        top: 179mm;
-    }
-
-    body .resumeContainer .content .skillHorizontalLine {
-        top: 240mm;
-    }
-
-    body .resumeContainer .content .title {
-        position: absolute;
-        left: 10mm;
-    }
-
-    body .resumeContainer .content .workTitle {
-        top: 61mm;
-    }
-
-    body .resumeContainer .content .educationTitle {
-        top: 170mm;
-    }
-
-    body .resumeContainer .content .skillTitle {
-        top: 231mm;
-    }
-
-    body .resumeContainer .content .section {
-        display: flex;
-        margin-top: 28mm;
-        position: relative;
-    }
-
-    body .resumeContainer .content .workExperienceSection .experiences {
-        display: flex;
-        flex-direction: column;
-        gap: 6mm;
-    }
-
-    body .resumeContainer .content .workExperienceSection .verticalLine {
-        position: absolute;
-        left: 35mm;
-        width: 0.7mm;
-        height: 100%;
-        background-color: #bdc3c7;
-    }
-
-    body .resumeContainer .content .workExperienceSection .verticalLine .point {
-        position: absolute;
-        top: 2mm;
-        width: 2.2mm;
-        height: 2.2mm;
-        transform: translateX(-40%);
-        border-radius: 5rem;
-        background-color: #000;
-    }
-
-    body .resumeContainer .content .workExperienceSection .verticalLine .pointTwo {
-        top: 25mm;
-    }
-
-    body .resumeContainer .content .workExperienceSection .verticalLine .pointThree {
-        top: 52mm;
-    }
-
-    body .resumeContainer .content .workExperienceSection .experiences .experienceWrapper {
-        display: flex;
-        gap: 24mm;
-    }
-
-    body .resumeContainer .content .workExperienceSection .experiences .experienceWrapper .experience {
-        display: flex;
-        flex-direction: column;
-    }
-
-    body .resumeContainer .content .experienceWrapper .date {
-        font-size: 4mm;
-        color: #000;
-    }
-
-    body .resumeContainer .content .subsection {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5mm;
-    }
-
-    body .resumeContainer .content .experience {
-        flex: 1 0 0;
-    }
-
-    body .resumeContainer .content .subsectionTitle {
-        font-size: 4.5mm;
-    }
-
-    body .resumeContainer .content .info {
-        font-size: 4mm;
-    }
-
-    body .resumeContainer .content .moreInfo {
-        font-size: 3.5mm;
-    }
-
-    body .resumeContainer .content .educationSection {
-        justify-content: space-between;
-        padding-top: 3mm;
-    }
-
-    body .resumeContainer .content .educationSection .degree {
-        width: 75mm;
-    }
-
-    body .resumeContainer .content .skillSection {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 3mm;
-    }
-
-    body .resumeContainer .content .section .wrapper {
-        display: flex;
-        font-size: 4mm;
-        list-style-type: none;
-    }
-
-    body .resumeContainer .content .skillSection {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    body .resumeContainer .content .skillSection .wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 3mm;
-    }
-
-    body .resumeContainer .content .skillSection .wrapper .items {
-        font-size: 4mm;
-        list-style-type: none;
-        display: flex;
-        gap: 15mm;
-    }
-
-    body .resumeContainer .content .skillSection .wrapper .items .subsection {
-        font-size: 4mm;
-        list-style-type: none;
-    }
-
 </style>
 <body>
-<main class="resumeContainer">
-    <aside class="menuItems">
-        <div class="personalInfo">
-            RESUME
-        </div>
-        <div class="menuItem workExperience">
-            <img alt="" class="menuItemImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M448%2096h-64V64c0-35.35-28.65-64-64-64H192C156.7%200%20128%2028.65%20128%2064v32H64C28.65%2096%200%20124.7%200%20160v256c0%2035.35%2028.65%2064%2064%2064h384c35.35%200%2064-28.65%2064-64V160C512%20124.7%20483.3%2096%20448%2096zM176%2064c0-8.838%207.164-16%2016-16h128c8.836%200%2016%207.162%2016%2016v32h-160V64zM368%20144v288h-224v-288H368zM48%20416V160c0-8.801%207.199-16%2016-16h32v288H64C55.2%20432%2048%20424.8%2048%20416zM464%20416c0%208.799-7.199%2016-16%2016h-32v-288h32c8.801%200%2016%207.199%2016%2016V416z'/%3e%3c/svg%3e">
-        </div>
-        <div class="menuItem education">
-            <img alt="" class="menuItemImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M623.1%20136.9l-282.7-101.2C334.3%2033.23%20327.2%2032%20320%2032S305.7%2033.23%20298.8%2035.68L16.05%20136.9C6.438%20140.4%200%20149.6%200%20160s6.438%2019.65%2016.05%2023.09L76.07%20204.6c-11.89%2015.8-20.26%2034.16-24.55%2053.95C40.05%20263.4%2032%20274.8%2032%20288c0%209.953%204.814%2018.49%2011.94%2024.36l-24.83%20149C17.48%20471.1%2025%20480%2034.89%20480H93.11c9.887%200%2017.41-8.879%2015.78-18.63l-24.83-149C91.19%20306.5%2096%20297.1%2096%20288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76%2012.88-33.82%2024.94-47.03l190.6%2068.23C305.7%20286.8%20312.8%20288%20320%20288s14.35-1.229%2021.21-3.684l282.7-101.2C633.6%20179.6%20640%20170.4%20640%20160S633.6%20140.4%20623.1%20136.9zM325.1%20239.1c-4.428%201.584-8.197%20.6816-10.09%20.0059L175.5%20189.2l149.2-45.92c8.453-2.594%2013.16-11.55%2010.57-20.02c-2.594-8.438-11.57-13.27-20.01-10.55L125.2%20171.2L93.96%20160l220.1-79.12c4.428-1.584%208.197-.6836%2010.09-.0059L546%20160L325.1%20239.1zM452.3%20278.5L464%20390.7C464%20401.3%20414.5%20432%20320%20432s-144-30.72-144-41.34l11.72-112.1l-46.08-16.5l-13.51%20126.1C128%20449.3%20224.6%20480%20320%20480s192-30.69%20191.9-91.81l-13.51-126.1L452.3%20278.5z'/%3e%3c/svg%3e">
-        </div>
-        <div class="menuItem skill">
-            <img alt="" class="menuItemImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M264.2%20181.8L426.7%2019.32C451.7-5.676%20492.3-5.677%20517.3%2019.32L556.7%2058.75C559.8%2061.87%20562.5%2065.24%20564.9%2068.79C581.3%2093.63%20578.6%20127.4%20556.7%20149.3L409.9%20296L630.8%20469.1C641.2%20477.3%20643.1%20492.4%20634.9%20502.8C626.7%20513.2%20611.6%20515.1%20601.2%20506.9L9.196%2042.89C-1.236%2034.71-3.065%2019.63%205.112%209.196C13.29-1.236%2028.37-3.065%2038.81%205.112L264.2%20181.8zM302.3%20211.6L371.9%20266.2L447%20191L384.1%20128.1L302.3%20211.6zM192.1%20383L244.7%20393.3L303.2%20334.9L341.2%20364.8L252.5%20453.4C251.2%20454.7%20249.9%20455.1%20248.5%20457.2C238.9%20465.7%20227.5%20471.1%20215.1%20475.6L94.77%20511C86.35%20513.5%2077.24%20511.2%2071.03%20504.1C64.82%20498.8%2062.5%20489.7%2064.97%20481.2L100.4%20360.9C104.5%20346.8%20112.2%20333.9%20122.6%20323.5L195.8%20250.3L233.8%20280.2L182.7%20331.3L192.1%20383zM123.4%20452.6L201.6%20429.6C203.9%20428.9%20206.2%20427.1%20208.4%20426.9L172.1%20419.6C164.2%20418%20157.1%20411.8%20156.4%20403.9L149.1%20367.6C148%20369.8%20147.1%20372.1%20146.4%20374.4L123.4%20452.6z'/%3e%3c/svg%3e">
-        </div>
-    </aside>
-    <aside class="content">
-        <div class="info">
-            <div class="nameWrapper">
-                <span class="firstname">Mahrokh</span>
-                <b class="lastname">Nabizadeh</b>
-                <span class="profession">Frontend Developer</span>
+<div class="resumeContainer">
+    <main class="resumeWrapper">
+        <aside class="menuItems">
+            <div class="personalInfo">
+                RESUME
             </div>
-
-            <div class="socialWrapper">
-                <div class="social">
-                    <img alt="" class="socialImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20384%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M304%200h-224c-35.35%200-64%2028.65-64%2064v384c0%2035.35%2028.65%2064%2064%2064h224c35.35%200%2064-28.65%2064-64V64C368%2028.65%20339.3%200%20304%200zM320%20448c0%208.822-7.178%2016-16%2016h-224C71.18%20464%2064%20456.8%2064%20448V64c0-8.822%207.178-16%2016-16h224C312.8%2048%20320%2055.18%20320%2064V448zM192%20392c-13.25%200-24%2010.74-24%2024c0%2013.25%2010.75%2024%2024%2024s24-10.75%2024-24C216%20402.7%20205.3%20392%20192%20392z'/%3e%3c/svg%3e">
-                    <img alt="" class="socialImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M448%2064H64C28.65%2064%200%2092.65%200%20128v256c0%2035.35%2028.65%2064%2064%2064h384c35.35%200%2064-28.65%2064-64V128C512%2092.65%20483.3%2064%20448%2064zM64%20112h384c8.822%200%2016%207.178%2016%2016v22.16l-166.8%20138.1c-23.19%2019.28-59.34%2019.27-82.47%20.0156L48%20150.2V128C48%20119.2%2055.18%20112%2064%20112zM448%20400H64c-8.822%200-16-7.178-16-16V212.7l136.1%20113.4C204.3%20342.8%20229.8%20352%20256%20352s51.75-9.188%2071.97-25.98L464%20212.7V384C464%20392.8%20456.8%20400%20448%20400z'/%3e%3c/svg%3e">
-                    <img alt="" class="socialImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M256%200C397.4%200%20512%20114.6%20512%20256C512%20397.4%20397.4%20512%20256%20512C114.6%20512%200%20397.4%200%20256C0%20114.6%20114.6%200%20256%200zM256%20464C263.4%20464%20282.1%20456.8%20303.6%20415.6C312.4%20397.9%20319.1%20376.4%20325.6%20352H186.4C192%20376.4%20199.6%20397.9%20208.4%20415.6C229%20456.8%20248.6%20464%20256%20464zM178.5%20304H333.5C335.1%20288.7%20336%20272.6%20336%20256C336%20239.4%20335.1%20223.3%20333.5%20208H178.5C176.9%20223.3%20176%20239.4%20176%20256C176%20272.6%20176.9%20288.7%20178.5%20304V304zM325.6%20160C319.1%20135.6%20312.4%20114.1%20303.6%2096.45C282.1%2055.22%20263.4%2048%20256%2048C248.6%2048%20229%2055.22%20208.4%2096.45C199.6%20114.1%20192%20135.6%20186.4%20160H325.6zM381.8%20208C383.2%20223.5%20384%20239.6%20384%20256C384%20272.4%20383.2%20288.5%20381.8%20304H458.4C462.1%20288.6%20464%20272.5%20464%20256C464%20239.5%20462.1%20223.4%20458.4%20208H381.8zM342.1%2066.61C356.2%2092.26%20367.4%20124.1%20374.7%20160H440.6C419.2%20118.9%20384.4%2085.88%20342.1%2066.61zM169.9%2066.61C127.6%2085.88%2092.84%20118.9%2071.43%20160H137.3C144.6%20124.1%20155.8%2092.26%20169.9%2066.61V66.61zM48%20256C48%20272.5%2049.93%20288.6%2053.57%20304H130.2C128.8%20288.5%20128%20272.4%20128%20256C128%20239.6%20128.8%20223.5%20130.2%20208H53.57C49.93%20223.4%2048%20239.5%2048%20256zM440.6%20352H374.7C367.4%20387.9%20356.2%20419.7%20342.1%20445.4C384.4%20426.1%20419.2%20393.1%20440.6%20352zM137.3%20352H71.43C92.84%20393.1%20127.6%20426.1%20169.9%20445.4C155.8%20419.7%20144.6%20387.9%20137.3%20352V352z'/%3e%3c/svg%3e">
-                    <img alt="" class="socialImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20384%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M272%20192C272%20236.2%20236.2%20272%20192%20272C147.8%20272%20112%20236.2%20112%20192C112%20147.8%20147.8%20112%20192%20112C236.2%20112%20272%20147.8%20272%20192zM192%20160C174.3%20160%20160%20174.3%20160%20192C160%20209.7%20174.3%20224%20192%20224C209.7%20224%20224%20209.7%20224%20192C224%20174.3%20209.7%20160%20192%20160zM384%20192C384%20279.4%20267%20435%20215.7%20499.2C203.4%20514.5%20180.6%20514.5%20168.3%20499.2C116.1%20435%200%20279.4%200%20192C0%2085.96%2085.96%200%20192%200C298%200%20384%2085.96%20384%20192H384zM192%2048C112.5%2048%2048%20112.5%2048%20192C48%20204.4%2052.49%20223.6%2063.3%20249.2C73.78%20274%2088.66%20301.4%20105.8%20329.1C134.2%20375.3%20167.2%20419.1%20192%20451.7C216.8%20419.1%20249.8%20375.3%20278.2%20329.1C295.3%20301.4%20310.2%20274%20320.7%20249.2C331.5%20223.6%20336%20204.4%20336%20192C336%20112.5%20271.5%2048%20192%2048V48z'/%3e%3c/svg%3e">
+            <div class="menuItem summary">
+                <img alt="" class="menuItemImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M320%2064h-49.61C262.1%2027.48%20230.7%200%20192%200S121%2027.48%20113.6%2064H64C28.65%2064%200%2092.66%200%20128v320c0%2035.34%2028.65%2064%2064%2064h256c35.35%200%2064-28.66%2064-64V128C384%2092.66%20355.3%2064%20320%2064zM192%2048c13.23%200%2024%2010.77%2024%2024S205.2%2096%20192%2096S168%2085.23%20168%2072S178.8%2048%20192%2048zM336%20448c0%208.82-7.178%2016-16%2016H64c-8.822%200-16-7.18-16-16V128c0-8.82%207.178-16%2016-16h18.26C80.93%20117.1%2080%20122.4%2080%20128v16C80%20152.8%2087.16%20160%2096%20160h192c8.836%200%2016-7.164%2016-16V128c0-5.559-.9316-10.86-2.264-16H320c8.822%200%2016%207.18%2016%2016V448zM288%20256H176C167.2%20256%20160%20263.2%20160%20272S167.2%20288%20176%20288H288c8.844%200%2016-7.156%2016-16S296.8%20256%20288%20256zM288%20352H176C167.2%20352%20160%20359.2%20160%20368S167.2%20384%20176%20384H288c8.844%200%2016-7.156%2016-16S296.8%20352%20288%20352zM104%20344c-13.25%200-24%2010.75-24%2024s10.75%2024%2024%2024C117.3%20392%20128%20381.3%20128%20368S117.3%20344%20104%20344zM108%20288c4.094%200%208.188-1.562%2011.31-4.688l48-48c6.25-6.25%206.25-16.38%200-22.62s-16.38-6.25-22.62%200L108%20249.4L95.31%20236.7c-6.25-6.25-16.38-6.25-22.62%200s-6.25%2016.38%200%2022.62l24%2024C99.81%20286.4%20103.9%20288%20108%20288z'/%3e%3c/svg%3e">
+            </div>
+            <div class="menuItem workExperience">
+                <img alt="" class="menuItemImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M448%2096h-64V64c0-35.35-28.65-64-64-64H192C156.7%200%20128%2028.65%20128%2064v32H64C28.65%2096%200%20124.7%200%20160v256c0%2035.35%2028.65%2064%2064%2064h384c35.35%200%2064-28.65%2064-64V160C512%20124.7%20483.3%2096%20448%2096zM176%2064c0-8.838%207.164-16%2016-16h128c8.836%200%2016%207.162%2016%2016v32h-160V64zM368%20144v288h-224v-288H368zM48%20416V160c0-8.801%207.199-16%2016-16h32v288H64C55.2%20432%2048%20424.8%2048%20416zM464%20416c0%208.799-7.199%2016-16%2016h-32v-288h32c8.801%200%2016%207.199%2016%2016V416z'/%3e%3c/svg%3e">
+            </div>
+        </aside>
+        <aside class="content">
+            <div class="info">
+                <div class="nameWrapper">
+                    <span class="firstname">Mahrokh</span>
+                    <b class="lastname">Nabizadeh</b>
+                    <span class="profession">Frontend Developer</span>
                 </div>
-                <div class="address">
-                    <span>-</span>
-                    <span>mahrokh.nz@gmail.com</span>
-                    <span>www.mahrokhnz.ir</span>
-                    <span>Tehran, Iran</span>
-                </div>
-            </div>
-        </div>
 
-        <h3 class="title workTitle">WORK EXPERIENCE</h3>
-        <div class="horizontalLine workHorizontalLine"></div>
-        <section class="workExperienceSection section">
-            <div class="verticalLine">
-                <span class="point pointOne"></span>
-                <span class="point pointTwo"></span>
-                <span class="point pointThree"></span>
-            </div>
-            <div class="experiences">
-                <div class="experienceWrapper">
-                    <span class="date">2024 - YET</span>
-                    <div class="experience subsection">
-                        <h4 class="subsectionTitle">Frontend Developer</h4>
-                        <span class="info">Maadiran | Tehran, Iran</span>
-                        <p class="moreInfo">
-                            I'm working on Maadiran credit project, A panel for sales agents and managers.
-                        </p>
+                <div class="socialWrapper">
+                    <div class="social">
+                        <img alt="" class="socialImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20384%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M304%200h-224c-35.35%200-64%2028.65-64%2064v384c0%2035.35%2028.65%2064%2064%2064h224c35.35%200%2064-28.65%2064-64V64C368%2028.65%20339.3%200%20304%200zM320%20448c0%208.822-7.178%2016-16%2016h-224C71.18%20464%2064%20456.8%2064%20448V64c0-8.822%207.178-16%2016-16h224C312.8%2048%20320%2055.18%20320%2064V448zM192%20392c-13.25%200-24%2010.74-24%2024c0%2013.25%2010.75%2024%2024%2024s24-10.75%2024-24C216%20402.7%20205.3%20392%20192%20392z'/%3e%3c/svg%3e">
+                        <img alt="" class="socialImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M448%2064H64C28.65%2064%200%2092.65%200%20128v256c0%2035.35%2028.65%2064%2064%2064h384c35.35%200%2064-28.65%2064-64V128C512%2092.65%20483.3%2064%20448%2064zM64%20112h384c8.822%200%2016%207.178%2016%2016v22.16l-166.8%20138.1c-23.19%2019.28-59.34%2019.27-82.47%20.0156L48%20150.2V128C48%20119.2%2055.18%20112%2064%20112zM448%20400H64c-8.822%200-16-7.178-16-16V212.7l136.1%20113.4C204.3%20342.8%20229.8%20352%20256%20352s51.75-9.188%2071.97-25.98L464%20212.7V384C464%20392.8%20456.8%20400%20448%20400z'/%3e%3c/svg%3e">
+                        <img alt="" class="socialImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M256%200C397.4%200%20512%20114.6%20512%20256C512%20397.4%20397.4%20512%20256%20512C114.6%20512%200%20397.4%200%20256C0%20114.6%20114.6%200%20256%200zM256%20464C263.4%20464%20282.1%20456.8%20303.6%20415.6C312.4%20397.9%20319.1%20376.4%20325.6%20352H186.4C192%20376.4%20199.6%20397.9%20208.4%20415.6C229%20456.8%20248.6%20464%20256%20464zM178.5%20304H333.5C335.1%20288.7%20336%20272.6%20336%20256C336%20239.4%20335.1%20223.3%20333.5%20208H178.5C176.9%20223.3%20176%20239.4%20176%20256C176%20272.6%20176.9%20288.7%20178.5%20304V304zM325.6%20160C319.1%20135.6%20312.4%20114.1%20303.6%2096.45C282.1%2055.22%20263.4%2048%20256%2048C248.6%2048%20229%2055.22%20208.4%2096.45C199.6%20114.1%20192%20135.6%20186.4%20160H325.6zM381.8%20208C383.2%20223.5%20384%20239.6%20384%20256C384%20272.4%20383.2%20288.5%20381.8%20304H458.4C462.1%20288.6%20464%20272.5%20464%20256C464%20239.5%20462.1%20223.4%20458.4%20208H381.8zM342.1%2066.61C356.2%2092.26%20367.4%20124.1%20374.7%20160H440.6C419.2%20118.9%20384.4%2085.88%20342.1%2066.61zM169.9%2066.61C127.6%2085.88%2092.84%20118.9%2071.43%20160H137.3C144.6%20124.1%20155.8%2092.26%20169.9%2066.61V66.61zM48%20256C48%20272.5%2049.93%20288.6%2053.57%20304H130.2C128.8%20288.5%20128%20272.4%20128%20256C128%20239.6%20128.8%20223.5%20130.2%20208H53.57C49.93%20223.4%2048%20239.5%2048%20256zM440.6%20352H374.7C367.4%20387.9%20356.2%20419.7%20342.1%20445.4C384.4%20426.1%20419.2%20393.1%20440.6%20352zM137.3%20352H71.43C92.84%20393.1%20127.6%20426.1%20169.9%20445.4C155.8%20419.7%20144.6%20387.9%20137.3%20352V352z'/%3e%3c/svg%3e">
+                        <img alt="" class="socialImg" src="data:image/svg+xml,%3csvg%20fill='currentColor'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%20width='48'%20height='48'%3e%3c!--!%20Font%20Awesome%20Pro%206.3.0%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202023%20Fonticons,%20Inc.%20--%3e%3cpath%20fill='%23fff'%20d='M416%2032H31.9C14.3%2032%200%2046.5%200%2064.3v383.4C0%20465.5%2014.3%20480%2031.9%20480H416c17.6%200%2032-14.5%2032-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4%20416H69V202.2h66.5V416zm-33.2-243c-21.3%200-38.5-17.3-38.5-38.5S80.9%2096%20102.2%2096c21.2%200%2038.5%2017.3%2038.5%2038.5%200%2021.3-17.2%2038.5-38.5%2038.5zm282.1%20243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6%200-39.9%2027-39.9%2054.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8%2030.6-34.5%2062.9-34.5%2067.2%200%2079.7%2044.3%2079.7%20101.9V416z'/%3e%3c/svg%3e">
+                        <img alt="" class="socialImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20384%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M272%20192C272%20236.2%20236.2%20272%20192%20272C147.8%20272%20112%20236.2%20112%20192C112%20147.8%20147.8%20112%20192%20112C236.2%20112%20272%20147.8%20272%20192zM192%20160C174.3%20160%20160%20174.3%20160%20192C160%20209.7%20174.3%20224%20192%20224C209.7%20224%20224%20209.7%20224%20192C224%20174.3%20209.7%20160%20192%20160zM384%20192C384%20279.4%20267%20435%20215.7%20499.2C203.4%20514.5%20180.6%20514.5%20168.3%20499.2C116.1%20435%200%20279.4%200%20192C0%2085.96%2085.96%200%20192%200C298%200%20384%2085.96%20384%20192H384zM192%2048C112.5%2048%2048%20112.5%2048%20192C48%20204.4%2052.49%20223.6%2063.3%20249.2C73.78%20274%2088.66%20301.4%20105.8%20329.1C134.2%20375.3%20167.2%20419.1%20192%20451.7C216.8%20419.1%20249.8%20375.3%20278.2%20329.1C295.3%20301.4%20310.2%20274%20320.7%20249.2C331.5%20223.6%20336%20204.4%20336%20192C336%20112.5%20271.5%2048%20192%2048V48z'/%3e%3c/svg%3e">
+                    </div>
+                    <div class="address">
+                        <span>-</span>
+                        <span>mahrokh.nz@gmail.com</span>
+                        <a href="https://www.mahrokhnz.ir" target="_blank">www.mahrokhnz.ir</a>
+                        <a href="https://www.linkedin.com/in/mahrokh-nabizadeh-335326144/" target="_blank">LinkedIn</a>
+                        <span>Tehran, Iran</span>
                     </div>
                 </div>
-                <div class="experienceWrapper">
-                    <span class="date">2021 - 2024</span>
-                    <div class="experience subsection">
-                        <h4 class="subsectionTitle">Frontend Developer</h4>
-                        <span class="info">Hamresan | Tehran, Iran</span>
-                        <p class="moreInfo">
-                            I worked on different projects like Rasayesh event websites, Rasayesh style guide,
-                            several panels
-                            like attendee, admin, company, and also Pharket website and panels.
-                        </p>
-                    </div>
-                </div>
-                <div class="experienceWrapper">
-                    <span class="date">2020 - 2021</span>
-                    <div class="experience subsection">
-                        <h4 class="subsectionTitle">Software Documenter</h4>
-                        <span class="info">Mabna | Tehran, Iran</span>
-                        <p class="moreInfo">
-                            I created many documents, videos and graphic contents for some software of Mabna group. and also I launched and
-                            managed Mabna Learning Management System (LMS).
-                        </p>
-                    </div>
-                </div>
-<!--                <div class="experienceWrapper">-->
-<!--                    <span class="date">2016 - 2020</span>-->
-<!--                    <div class="experience subsection">-->
-<!--                        <h4 class="subsectionTitle">Content Specialist</h4>-->
-<!--                        <span class="info">Peyke Bartar | Tehran, Iran</span>-->
-<!--                        <p class="moreInfo">-->
-<!--                            I started my work experience in content creating, like visual and written contents. these-->
-<!--                            experiences were in sub-sets of Peyke Bartar like Zibamoon and Dunro.-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
-        </section>
 
-        <h3 class="title educationTitle">EDUCATION</h3>
-        <div class="horizontalLine educationHorizontalLine"></div>
-        <section class="educationSection section">
-            <div class="degree subsection">
-                <h4 class="subsectionTitle">MASTER OF BUSINESS ADMINISTRATION</h4>
-                <span class="info">University of Science and Culture | Tehran, Iran</span>
-                <p class="moreInfo">
-                    I studied MBA, my thesis is about repurchase intention in online retail stores, that I have got
-                    great score in defend session.</p>
-            </div>
-            <div class="degree subsection">
-                <h4 class="subsectionTitle">BACHELOR OF ENGINEERING</h4>
-                <span class="info">University of Tehran | Tehran, Iran</span>
-                <p class="moreInfo">
-                    I studied Mechanical Engineering.
+            <h3 class="title summaryTitle">SUMMARY</h3>
+            <div class="horizontalLine summaryHorizontalLine"></div>
+            <section class="summarySection section">
+                <p>
+                    A Frontend Developer that work from 2021 with a passion for building efficient, user-centric and responsive web
+                    applications. I focus on creating high-quality, performance-driven solutions. I’m continuously improving
+                    my skills and exploring new technologies. My main skills are HTML5, CSS3, Javascript, Typescript, Reactjs, Nextjs.
                 </p>
-            </div>
-        </section>
+            </section>
 
-        <h3 class="title skillTitle">SKILLS</h3>
-        <div class="horizontalLine skillHorizontalLine"></div>
-        <section class="section skillSection">
-            <div class="wrapper software">
-                <h4 class="subsectionTitle">Software and Skills</h4>
-                <div class="items">
-                    <ul class="subsection">
-                        <li>Reactjs</li>
-                        <li>Nextjs</li>
-                        <li>Javascript</li>
-                        <li>Typescript</li>
-                        <li>Stylus</li>
-                        <li>Sass</li>
-                    </ul>
-                    <ul class="subsection">
-                        <li>Css</li>
-                        <li>HTML</li>
-                        <li>Graphql</li>
-                        <li>Rest Api</li>
-                        <li>Webpack</li>
-                        <li>Vite</li>
-                    </ul>
-                    <ul class="subsection">
-                        <li>Data Structure</li>
-                        <li>Material UI</li>
-                        <li>PWA</li>
-                        <li>Websocket</li>
-                        <li>Responsive Web Design</li>
-                        <li>Threejs</li>
-                    </ul>
+            <h3 class="title workTitle">WORK EXPERIENCE</h3>
+            <div class="horizontalLine workHorizontalLine"></div>
+            <section class="workExperienceSection section">
+                <div class="verticalLine">
+                    <span class="point pointOne"></span>
+                    <span class="point pointTwo"></span>
+                    <span class="point pointThree"></span>
                 </div>
-            </div>
-            <div class="wrapper professional">
-                <h4 class="subsectionTitle">Professional</h4>
-                <div class="items">
-                    <ul class="subsection">
-                        <li>Team Work</li>
-                        <li>Problem Solving skills</li>
-                        <li>Responsible</li>
-                        <li>Decision-making Power</li>
-                        <li>Planning</li>
-                        <li>Writing Skills</li>
-                    </ul>
+                <div class="experiences">
+                    <div class="experienceWrapper">
+                        <span class="date">2024 - YET</span>
+                        <div class="experience subsection">
+                            <h4 class="subsectionTitle">Frontend Developer</h4>
+                            <span class="info">Maadiran | Tehran, Iran</span>
+                            <p class="moreInfo">
+                                I'm working on Maadiran credit project, A panel for sales agents and managers.
+                            <div class="tags">
+                                <span class="tag">Reactjs</span>
+                                <span class="tag">Nextjs</span>
+                                <span class="tag">Javascript</span>
+                                <span class="tag">Typescript</span>
+                                <span class="tag">Sass</span>
+                                <span class="tag">Css</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">Rest Api</span>
+                                <span class="tag">Webpack</span>
+                                <span class="tag">Material UI</span>
+                                <span class="tag">PWA</span>
+                                <span class="tag">Responsive Web Design</span>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experienceWrapper">
+                        <span class="date">2021 - 2024</span>
+                        <div class="experience subsection">
+                            <h4 class="subsectionTitle">Frontend Developer</h4>
+                            <span class="info">Hamresan | Tehran, Iran</span>
+                            <p class="moreInfo">
+                                I worked on different projects like Rasayesh event websites, Rasayesh style guide,
+                                several panels
+                                like attendee, admin, company, and also Pharket website and panels.
+                            <div class="tags">
+                                <span class="tag">Reactjs</span>
+                                <span class="tag">Javascript</span>
+                                <span class="tag">Typescript</span>
+                                <span class="tag">Stylus</span>
+                                <span class="tag">Sass</span>
+                                <span class="tag">Css</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">Graphql</span>
+                                <span class="tag">Rest Api</span>
+                                <span class="tag">Webpack</span>
+                                <span class="tag">Data Structure</span>
+                                <span class="tag">Material UI</span>
+                                <span class="tag">Websocket</span>
+                                <span class="tag">Responsive Web Design</span>
+                                <span class="tag">Threejs</span>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experienceWrapper">
+                        <span class="date">2020 - 2021</span>
+                        <div class="experience subsection">
+                            <h4 class="subsectionTitle">Software Documenter</h4>
+                            <span class="info">Mabna | Tehran, Iran</span>
+                            <p class="moreInfo">
+                                I created many documents, videos and graphic contents for some software of Mabna group. and
+                                also I launched and
+                                managed Mabna Learning Management System (LMS).
+                            </p>
+                        </div>
+                    </div>
                 </div>
+            </section>
+        </aside>
+    </main>
+
+    <div class="pageBreak"></div>
+
+    <main class="resumeWrapper">
+        <aside class="menuItems">
+            <div class="menuItem education">
+                <img alt="" class="menuItemImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M623.1%20136.9l-282.7-101.2C334.3%2033.23%20327.2%2032%20320%2032S305.7%2033.23%20298.8%2035.68L16.05%20136.9C6.438%20140.4%200%20149.6%200%20160s6.438%2019.65%2016.05%2023.09L76.07%20204.6c-11.89%2015.8-20.26%2034.16-24.55%2053.95C40.05%20263.4%2032%20274.8%2032%20288c0%209.953%204.814%2018.49%2011.94%2024.36l-24.83%20149C17.48%20471.1%2025%20480%2034.89%20480H93.11c9.887%200%2017.41-8.879%2015.78-18.63l-24.83-149C91.19%20306.5%2096%20297.1%2096%20288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76%2012.88-33.82%2024.94-47.03l190.6%2068.23C305.7%20286.8%20312.8%20288%20320%20288s14.35-1.229%2021.21-3.684l282.7-101.2C633.6%20179.6%20640%20170.4%20640%20160S633.6%20140.4%20623.1%20136.9zM325.1%20239.1c-4.428%201.584-8.197%20.6816-10.09%20.0059L175.5%20189.2l149.2-45.92c8.453-2.594%2013.16-11.55%2010.57-20.02c-2.594-8.438-11.57-13.27-20.01-10.55L125.2%20171.2L93.96%20160l220.1-79.12c4.428-1.584%208.197-.6836%2010.09-.0059L546%20160L325.1%20239.1zM452.3%20278.5L464%20390.7C464%20401.3%20414.5%20432%20320%20432s-144-30.72-144-41.34l11.72-112.1l-46.08-16.5l-13.51%20126.1C128%20449.3%20224.6%20480%20320%20480s192-30.69%20191.9-91.81l-13.51-126.1L452.3%20278.5z'/%3e%3c/svg%3e">
             </div>
-        </section>
-    </aside>
-</main>
+            <div class="menuItem skill">
+                <img alt="" class="menuItemImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M264.2%20181.8L426.7%2019.32C451.7-5.676%20492.3-5.677%20517.3%2019.32L556.7%2058.75C559.8%2061.87%20562.5%2065.24%20564.9%2068.79C581.3%2093.63%20578.6%20127.4%20556.7%20149.3L409.9%20296L630.8%20469.1C641.2%20477.3%20643.1%20492.4%20634.9%20502.8C626.7%20513.2%20611.6%20515.1%20601.2%20506.9L9.196%2042.89C-1.236%2034.71-3.065%2019.63%205.112%209.196C13.29-1.236%2028.37-3.065%2038.81%205.112L264.2%20181.8zM302.3%20211.6L371.9%20266.2L447%20191L384.1%20128.1L302.3%20211.6zM192.1%20383L244.7%20393.3L303.2%20334.9L341.2%20364.8L252.5%20453.4C251.2%20454.7%20249.9%20455.1%20248.5%20457.2C238.9%20465.7%20227.5%20471.1%20215.1%20475.6L94.77%20511C86.35%20513.5%2077.24%20511.2%2071.03%20504.1C64.82%20498.8%2062.5%20489.7%2064.97%20481.2L100.4%20360.9C104.5%20346.8%20112.2%20333.9%20122.6%20323.5L195.8%20250.3L233.8%20280.2L182.7%20331.3L192.1%20383zM123.4%20452.6L201.6%20429.6C203.9%20428.9%20206.2%20427.1%20208.4%20426.9L172.1%20419.6C164.2%20418%20157.1%20411.8%20156.4%20403.9L149.1%20367.6C148%20369.8%20147.1%20372.1%20146.4%20374.4L123.4%20452.6z'/%3e%3c/svg%3e">
+            </div>
+            <div class="menuItem language">
+                <img alt="" class="menuItemImg" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20512'%20width='48'%20height='48'%3e%3cpath%20fill='%23fff'%20d='M456%20164C467%20164%20476%20172.1%20476%20184V188H536C547%20188%20556%20196.1%20556%20208C556%20219%20547%20228%20536%20228H534L532.4%20232.5C523.5%20256.1%20509.9%20279.1%20492.7%20297.9C493.6%20298.4%20494.5%20298.1%20495.4%20299.5L514.3%20310.8C523.8%20316.5%20526.8%20328.8%20521.1%20338.3C515.5%20347.8%20503.2%20350.8%20493.7%20345.1L474.8%20333.8C470.4%20331.1%20465.1%20328.3%20461.7%20325.3C451.2%20332.8%20439.8%20339.3%20427.8%20344.7L424.1%20346.3C414%20350.8%20402.2%20346.2%20397.7%20336.1C393.2%20326%20397.8%20314.2%20407.9%20309.7L411.5%20308.1C417.9%20305.2%20424.1%20301.1%20430%20298.3L417.9%20286.1C410%20278.3%20410%20265.7%20417.9%20257.9C425.7%20250%20438.3%20250%20446.1%20257.9L460.7%20272.4L461.3%20272.1C473.7%20259.9%20483.8%20244.7%20491.1%20227.1H384C372.1%20227.1%20364%20219%20364%20207.1C364%20196.1%20372.1%20187.1%20384%20187.1H436V183.1C436%20172.1%20444.1%20163.1%20456%20163.1L456%20164zM140.1%20276L160%20233.2L179%20276H140.1zM576%2064C611.3%2064%20640%2092.65%20640%20128V384C640%20419.3%20611.3%20448%20576%20448H64C28.65%20448%200%20419.3%200%20384V128C0%2092.65%2028.65%2064%2064%2064H576zM576%20112H320V400H576C584.8%20400%20592%20392.8%20592%20384V128C592%20119.2%20584.8%20112%20576%20112zM178.3%20175.9C175.1%20168.7%20167.9%20164%20160%20164C152.1%20164%20144.9%20168.7%20141.7%20175.9L77.72%20319.9C73.24%20329.1%2077.78%20341.8%2087.88%20346.3C97.97%20350.8%20109.8%20346.2%20114.3%20336.1L123.2%20315.1H196.8L205.7%20336.1C210.2%20346.2%20222%20350.8%20232.1%20346.3C242.2%20341.8%20246.8%20329.1%20242.3%20319.9L178.3%20175.9z'/%3e%3c/svg%3e">
+            </div>
+        </aside>
+        <aside class="content">
+            <h3 class="title educationTitle">EDUCATION</h3>
+            <div class="horizontalLine educationHorizontalLine"></div>
+            <section class="educationSection section">
+                <div class="degree subsection">
+                    <h4 class="subsectionTitle">MASTER OF BUSINESS ADMINISTRATION</h4>
+                    <span class="info">University of Science and Culture | Tehran, Iran</span>
+                    <p class="moreInfo">
+                        I studied MBA, my thesis is about repurchase intention in online retail stores, that I have got
+                        great score in defend session.</p>
+                </div>
+                <div class="degree subsection">
+                    <h4 class="subsectionTitle">BACHELOR OF ENGINEERING</h4>
+                    <span class="info">University of Tehran | Tehran, Iran</span>
+                    <p class="moreInfo">
+                        I studied Mechanical Engineering.
+                    </p>
+                </div>
+            </section>
+
+            <h3 class="title skillTitle">SKILLS</h3>
+            <div class="horizontalLine skillHorizontalLine"></div>
+            <section class="section skillSection">
+                <div class="wrapper software">
+                    <h4 class="subsectionTitle">Hard Skills</h4>
+                    <div class="items">
+                        <ul class="subsection">
+                            <li>Reactjs</li>
+                            <li>Nextjs</li>
+                            <li>Javascript</li>
+                            <li>Typescript</li>
+                            <li>Stylus</li>
+                            <li>Sass</li>
+                        </ul>
+                        <ul class="subsection">
+                            <li>Css</li>
+                            <li>HTML</li>
+                            <li>Graphql</li>
+                            <li>Rest Api</li>
+                            <li>Webpack</li>
+                            <li>Vite</li>
+                        </ul>
+                        <ul class="subsection">
+                            <li>Data Structure</li>
+                            <li>Material UI</li>
+                            <li>PWA</li>
+                            <li>Websocket</li>
+                            <li>Responsive Web Design</li>
+                            <li>Threejs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrapper professional">
+                    <h4 class="subsectionTitle">Soft Skills</h4>
+                    <div class="items">
+                        <ul class="subsection">
+                            <li>Problem Solving</li>
+                            <li>Team Work</li>
+                            <li>Effective Communication</li>
+                            <li>Time Management</li>
+                            <li>Analytical Thinking</li>
+                            <li>Adaptability and Flexibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <h3 class="title languageTitle">LANGUAGES</h3>
+            <div class="horizontalLine languageHorizontalLine"></div>
+            <section class="languageSection section">
+                <div class="degree subsection">
+                    <h4 class="subsectionTitle">English</h4>
+                    <span class="info">Safir Language Academy | Tehran, Iran</span>
+                    <p class="moreInfo">
+                        36 semester and 864 hours for advanced level</p>
+                    <p class="moreInfo">
+                        16 semester and 384 hours for upper-intermediate level</p>
+                </div>
+                <div class="degree subsection">
+                    <h4 class="subsectionTitle">Persian</h4>
+                    <span class="info">Native</span>
+                </div>
+            </section>
+        </aside>
+    </main>
+</div>
+
 <script crossorigin="anonymous"
         integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
         referrerpolicy="no-referrer"
